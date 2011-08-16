@@ -1,5 +1,6 @@
 JMETER test für die Suche von Fedora
 -------------------------------------
+Um den Test zu starten bitte run.sh ausführen. 
 
 Über die testplan.properties kann die Suche 
 konfiguriert werden. 

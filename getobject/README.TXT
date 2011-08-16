@@ -1,6 +1,8 @@
 JMETER Test zum retrieven von Objekten (FOXML Dateien) in Fedora.
 -----------------------------------------------------
 
+Um den Test zu starten bitte run.sh ausführen. 
+
 Der Test kann über die testplan.properties Datei 
 konfiguriert werden. 
 
