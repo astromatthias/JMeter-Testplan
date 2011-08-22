@@ -68,11 +68,6 @@
               <stringProp name="Argument.value">${__P(path,/ir/item)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="AUTHBASEURL" elementType="Argument">
-              <stringProp name="Argument.name">AUTHBASEURL</stringProp>
-              <stringProp name="Argument.value">${__P(authbaseurl,http://localhost:8082/aa/login)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="AUTHUSER" elementType="Argument">
               <stringProp name="Argument.name">AUTHUSER</stringProp>
               <stringProp name="Argument.value">${__P(authuser,sysadmin)}</stringProp>
@@ -83,14 +78,24 @@
               <stringProp name="Argument.value">${__P(authpass,sysadmin)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="AUTHDOMAIN" elementType="Argument">
-              <stringProp name="Argument.name">AUTHDOMAIN</stringProp>
-              <stringProp name="Argument.value">${__P(authdomain,/)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="TESTDATEN" elementType="Argument">
               <stringProp name="Argument.name">TESTDATEN</stringProp>
               <stringProp name="Argument.value">${__P(testdaten,testdaten.csv)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="LOGINPATH" elementType="Argument">
+              <stringProp name="Argument.name">LOGINPATH</stringProp>
+              <stringProp name="Argument.value">${__P(loginpath,/aa/login)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="LOGINTARGET" elementType="Argument">
+              <stringProp name="Argument.name">LOGINTARGET</stringProp>
+              <stringProp name="Argument.value">${__P(logintarget,/AdminTool)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="LOGINACTION" elementType="Argument">
+              <stringProp name="Argument.name">LOGINACTION</stringProp>
+              <stringProp name="Argument.value">${__P(loginaction,/aa/j_spring_security_check)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -127,7 +132,7 @@
         <hashTree/>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login-Controller" enabled="true"/>
         <hashTree>
-          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="/AdminTool" enabled="true">
+          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="/AdminTool" enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="escidocurl" elementType="HTTPArgument">
@@ -195,7 +200,7 @@
                 <elementProp name="target" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">target</stringProp>
-                  <stringProp name="Argument.value">http://localhost:8082/AdminTool/</stringProp>
+                  <stringProp name="Argument.value">http://${HOST}:${PORT}${LOGINTARGET}/</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -207,7 +212,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/aa/login</stringProp>
+            <stringProp name="HTTPSampler.path">${LOGINPATH}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -217,7 +222,7 @@
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSampler2>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Accept-Language" elementType="Header">
                   <stringProp name="Header.name">Accept-Language</stringProp>
@@ -257,14 +262,14 @@
                 <elementProp name="j_username" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">j_username</stringProp>
-                  <stringProp name="Argument.value">sysadmin</stringProp>
+                  <stringProp name="Argument.value">${AUTHUSER}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="j_password" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">j_password</stringProp>
-                  <stringProp name="Argument.value">sysadmin</stringProp>
+                  <stringProp name="Argument.value">${AUTHPASS}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -283,7 +288,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/aa/j_spring_security_check</stringProp>
+            <stringProp name="HTTPSampler.path">${LOGINACTION}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -293,7 +298,7 @@
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSampler2>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -331,7 +336,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="/aa/login" enabled="true">
+          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="/aa/login" enabled="false">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="target" elementType="HTTPArgument">

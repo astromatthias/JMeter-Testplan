@@ -1,6 +1,6 @@
 #!/bin/bash
 # Main Script to run the JMETER test
-# Script validate environment and the status of Fedora
+# Script validate environment and the status of eSciDoc
 
 # Check if JMETER_HOME is set
 
@@ -13,11 +13,13 @@ fi
 
 # get login detail from testplan properties
 if [ -f testplan.properties ]; then
-url=`cat testplan.properties | grep authbaseurl | awk -F= {'print $2'}`
-user=`cat testplan.properties | grep authuser | awk -F= {'print $2'}`
-password=`cat testplan.properties | grep authpass | awk -F= {'print $2'}`
 marker=":"
-credentials=$user$marker$password
+domain=`cat testplan.properties | grep "host=" | awk -F= {'print $2'}`
+port=`cat testplan.properties | grep "port=" | awk -F= {'print $2'}`
+url="http://"$domain$marker$port"/AdminTool"
+#user=`cat testplan.properties | grep authuser | awk -F= {'print $2'}`
+#password=`cat testplan.properties | grep authpass | awk -F= {'print $2'}`
+#credentials=$user$marker$password
 else 
 
 echo "No testplan.properties available"
@@ -26,7 +28,7 @@ fi
 
 # spider the url
 
-returncode=`curl -IL --user $credentials $url 2>&1 | grep "HTTP/[0-9].[0-9] 200"`
+returncode=`curl -IL $url 2>&1 | grep "HTTP/[0-9].[0-9] 200"`
 statuscode="1000"
 if [ ${#returncode} != 0 ]; then
 statuscode=`echo $returncode | awk {'print $2'}`
