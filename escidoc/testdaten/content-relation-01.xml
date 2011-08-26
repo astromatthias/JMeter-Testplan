@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escidocContentRelation:content-relation
+	xmlns:escidocContentRelation="http://www.escidoc.de/schemas/content-relation/0.1"
+	xmlns:prop="http://escidoc.de/core/01/properties/" 
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:md-records="http://www.escidoc.de/schemas/metadatarecords/0.5"
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+	<escidocContentRelation:properties>
+		<prop:description>Demo content relation between Context and Item</prop:description>
+	</escidocContentRelation:properties>
+
+	<escidocContentRelation:type>http://www.escidoc.de/ontologies/mpdl-ontologies/content-relations#hasPart</escidocContentRelation:type>
+
+	<escidocContentRelation:subject xlink:href="/ir/context/escidoc:ex1" />
+	<escidocContentRelation:object xlink:href="/ir/item/escidoc:ex5:1" />
+
+	<md-records:md-records>
+		<md-records:md-record name="escidoc"><bla/></md-records:md-record>
+	</md-records:md-records>
+
+</escidocContentRelation:content-relation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escidocContentModel:content-model
+	xmlns:escidocContentModel="http://www.escidoc.de/schemas/contentmodel/0.1"
+	xmlns:prop="http://escidoc.de/core/01/properties/">
+
+	<escidocContentModel:properties>
+		<prop:name>Test minimal for create CM</prop:name>
+		<prop:description>for test purpose</prop:description>
+	</escidocContentModel:properties>
+
+</escidocContentModel:content-model>
+

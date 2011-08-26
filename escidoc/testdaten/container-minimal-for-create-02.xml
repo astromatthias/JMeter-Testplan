@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container:container xml:base="http://www.escidoc.de/"
+	xmlns="http://www.escidoc.de/schemas/container/0.9"
+	xmlns:container="http://www.escidoc.de/schemas/container/0.9"
+	xmlns:prop="http://escidoc.de/core/01/properties/"
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:metadata-records="http://www.escidoc.de/schemas/metadatarecords/0.5"
+	xmlns:struct-map="http://www.escidoc.de/schemas/structmap/0.4"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<!--  container:properties  -->
+	<container:properties>
+
+		<!-- 
+			A Container has to reference one Context.
+			The Context has to exist before you can create an Container. 
+		-->
+		<srel:context xlink:href="/ir/context/escidoc:ex1" />
+		<!-- 
+			Each Container has to reference a content model. The 
+			content model has to exist before you can reference it.
+		-->
+		<srel:content-model xlink:href="/cmm/content-model/escidoc:ex4" />
+
+		<prop:content-model-specific>
+			<my-content-model-value-structure />
+		</prop:content-model-specific>
+	</container:properties>
+
+	<!-- 
+		A Container could have multiple meta data records. 
+	-->
+	<metadata-records:md-records>
+		<!-- 
+			At least on meta data record with name escidoc is needed. 
+		-->
+		<metadata-records:md-record
+			schema="http://www.escidoc-project.de/metadata/schema/0.1"
+			name="escidoc">
+			<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+			  <dc:title>Example Container 02 (REST)</dc:title>
+			  <dc:description>Description of Example Container 02 (REST)</dc:description>
+			</metadata>
+		</metadata-records:md-record>
+	</metadata-records:md-records>
+	
+	<!-- 
+		The list of members of the container. struct-map is optional
+		and is discarded in update requests. See ContainerHandler.addMember()
+	-->
+	<struct-map:struct-map>
+		<srel:item xlink:href="/ir/item/escidoc:ex5"/>
+	</struct-map:struct-map>
+
+</container:container>

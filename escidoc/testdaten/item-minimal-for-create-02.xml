@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+	Example 2 of a minimal Item or create. This example extends example 1 
+	with a Component with binary content.
+-->
+<escidocItem:item
+	xmlns:escidocItem="http://www.escidoc.de/schemas/item/0.10"
+	xmlns:escidocMetadataRecords="http://www.escidoc.de/schemas/metadatarecords/0.5"
+	xmlns:escidocComponents="http://www.escidoc.de/schemas/components/0.9"
+	xmlns:prop="http://escidoc.de/core/01/properties/"
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+	<escidocItem:properties>
+		<srel:context xlink:href="/ir/context/escidoc:ex1" />
+		<srel:content-model xlink:href="/cmm/content-model/escidoc:ex4" />
+		<prop:content-model-specific>
+			<cms-prop test="1" />
+		</prop:content-model-specific>
+	</escidocItem:properties>
+
+	<!-- 
+		At least on meta data record with name escidoc is needed. 
+	-->
+	<escidocMetadataRecords:md-records>
+		<escidocMetadataRecords:md-record name="escidoc">
+			<!-- 
+				Put in the meta data within a XML structure. 
+				These XML of meta data has to have only one XML 
+				root element.
+				The following example is a minimal (may be 
+				useless) example without meta data.  
+			-->
+			<metadata />
+		</escidocMetadataRecords:md-record>
+
+	</escidocMetadataRecords:md-records>
+
+
+	<escidocComponents:components>
+		<escidocComponents:component>
+			<escidocComponents:properties>
+				<prop:valid-status>valid</prop:valid-status>
+				<prop:visibility>public</prop:visibility>
+				<prop:content-category>pre-print</prop:content-category>
+			</escidocComponents:properties>
+
+			<escidocComponents:content
+				xlink:href="http://localhost:8080/images/escidoc-banner.jpg"
+				storage="internal-managed" />
+
+		</escidocComponents:component>
+
+	</escidocComponents:components>
+
+</escidocItem:item>
+

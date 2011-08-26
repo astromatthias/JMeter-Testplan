@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Example of a minimal Context for create. There is no element or 
+	attribute which could be left out.
+	
+	The eSciDoc example package should be installed. Otherwise are 
+	the object references to alter.     
+-->
+<context:context
+	xmlns:context="http://www.escidoc.de/schemas/context/0.7"
+	xmlns:prop="http://escidoc.de/core/01/properties/"
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+	<context:properties>
+		<!-- The name of a Context must be unique. -->
+		<prop:name>Context Example 01 (REST)</prop:name>
+		<prop:description>
+			Context minimal example for create.
+		</prop:description>
+		<prop:type>ExampleType</prop:type>
+
+		<prop:organizational-units>
+			<!-- A Context has to have at least one Organizational Unit 
+				reference. -->
+			<srel:organizational-unit
+				xlink:href="/oum/organizational-unit/escidoc:ex3" />
+		</prop:organizational-units>
+	</context:properties>
+
+</context:context>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		Example 1 of a Item with Content Relations. The relation examples base
+		on the minimal Item examples.
+	-->
+	<!--
+		Precondition: Both referenced Items have to exist! 
+	-->
+<escidocItem:item xmlns:escidocItem="http://www.escidoc.de/schemas/item/0.10"
+	xmlns:escidocMetadataRecords="http://www.escidoc.de/schemas/metadatarecords/0.5"
+	xmlns:prop="http://escidoc.de/core/01/properties/" xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:relations="http://www.escidoc.de/schemas/relations/0.3"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+	<escidocItem:properties>
+		<srel:context xlink:href="/ir/context/escidoc:ex1" />
+		<srel:content-model xlink:href="/cmm/content-model/escidoc:ex4" />
+		<prop:content-model-specific>
+			<cms-prop test="1" />
+		</prop:content-model-specific>
+	</escidocItem:properties>
+
+	<escidocMetadataRecords:md-records>
+		<escidocMetadataRecords:md-record
+			name="escidoc">
+			<metadata />
+		</escidocMetadataRecords:md-record>
+	</escidocMetadataRecords:md-records>
+
+	<!--
+		Content Relations. Each Content Relation has an attribute which
+		defines the 'predicate' and a reference to a resource. The predicate
+		consists of predicate namespace and name of predicate. The resource
+		reference is an xlink href.
+	-->
+	<relations:relations>
+		<relations:relation
+			predicate="http://www.escidoc.de/ontologies/mpdl-ontologies/content-relations#isPartOf"
+			prefix-xlink:href="/ir/item/escidoc:ex1" />
+		<relations:relation
+			predicate="http://www.escidoc.de/ontologies/mpdl-ontologies/content-relations#isPartOf"
+			prefix-xlink:href="/ir/item/escidoc:ex2" />
+	</relations:relations>
+
+</escidocItem:item>
+

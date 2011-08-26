@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Example of a minimal Organizational Unit for create. There is no element or 
+	attribute which could be left out.
+-->
+<prefix-organizational-unit:organizational-unit
+	xmlns:prefix-organizational-unit="http://www.escidoc.de/schemas/organizationalunit/0.8"
+	xmlns:prefix-xlink="http://www.w3.org/1999/xlink"
+	xmlns:md-records="http://www.escidoc.de/schemas/metadatarecords/0.5">
+	
+	<md-records:md-records
+		xmlns:ou="http://www.escidoc.de/metadata/organizational-unit"
+		xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<md-records:md-record name="escidoc">
+			<ou:ou>
+				<!-- Title of Organizational Units must be unique! -->
+				<dc:title>Example OU 01 (REST)</dc:title>
+			</ou:ou>
+		</md-records:md-record>
+	</md-records:md-records>
+</prefix-organizational-unit:organizational-unit>

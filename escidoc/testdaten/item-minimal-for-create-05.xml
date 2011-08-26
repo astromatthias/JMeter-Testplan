@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		Example 5 of a minimal Item for create. This example introduce an
+		new MetadataRecord within DC format to set title etc. of Item.
+	-->
+<escidocItem:item xmlns:escidocItem="http://www.escidoc.de/schemas/item/0.10"
+	xmlns:escidocMetadataRecords="http://www.escidoc.de/schemas/metadatarecords/0.5"
+	xmlns:escidocComponents="http://www.escidoc.de/schemas/components/0.9"
+	xmlns:prop="http://escidoc.de/core/01/properties/" xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+	<escidocItem:properties>
+		<srel:context xlink:href="/ir/context/escidoc:ex1" />
+		<srel:content-model xlink:href="/cmm/content-model/escidoc:ex4" />
+		<prop:content-model-specific>
+			<cms-prop test="1" />
+		</prop:content-model-specific>
+	</escidocItem:properties>
+
+	<escidocMetadataRecords:md-records>
+		<escidocMetadataRecords:md-record
+			name="escidoc">
+					<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+						<dc:title>Example Item 05 (REST)</dc:title>
+						<dc:description>Description of Example Item 05
+							(REST)</dc:description>
+					</metadata>
+		</escidocMetadataRecords:md-record>
+
+	</escidocMetadataRecords:md-records>
+</escidocItem:item>
+
