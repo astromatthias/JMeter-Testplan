@@ -16,6 +16,16 @@ Bsp.
 /opt/data/myfoxml.xml,myfoxml.xml,text/xml 
 
 
+Das Script erstellt eine objects.csv Datei, welche das last-modificationdate, 
+den Type und die Id des Objects beinhaltet. Dies geschieht über ein Beanshell script, 
+namens xpath.bsh. 
+
+Es ist ausserdem wichtig die richitige JMeter.properties Datei zu laden. 
+Diese ist im Verzeichnis ../../properties. Das runtest.sh script ist schon richtig
+konfiguriert.  
+
+
+
 
 Viel Spaß
 
