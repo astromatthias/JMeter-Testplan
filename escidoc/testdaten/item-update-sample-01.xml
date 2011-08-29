@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8082/xsl/Resource2Html.xsl"?>
+<escidocItem:item
+	xmlns:relations="http://www.escidoc.de/schemas/relations/0.3"
+	xmlns:escidocMetadataRecords="http://www.escidoc.de/schemas/metadatarecords/0.5"    
+	xmlns:escidocContentStreams="http://www.escidoc.de/schemas/contentstreams/0.7"           
+	xmlns:escidocComponents="http://www.escidoc.de/schemas/components/0.9"         
+	xmlns:version="http://escidoc.de/core/01/properties/version/" 
+	xmlns:release="http://escidoc.de/core/01/properties/release/" 	     
+	xmlns:escidocItem="http://www.escidoc.de/schemas/item/0.10"
+	xmlns:prop="http://escidoc.de/core/01/properties/" 
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+	xmlns:xlink="http://www.w3.org/1999/xlink"   
+	xml:base="http://localhost:8082"  
+	xlink:type="simple" 
+	xlink:title="Item escidoc:5009" 
+	xlink:href="/ir/item/escidoc:5009" last-modification-date="2011-08-29T08:14:47.766Z" > 
+	
+ 	<escidocItem:properties     
+ 		xlink:type="simple" xlink:title="Properties" xlink:href="/ir/item/escidoc:5009/properties">
+ 		<prop:creation-date>2011-08-22T06:57:39.312Z</prop:creation-date>
+ 		<srel:created-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />
+ 		<prop:public-status>pending</prop:public-status>
+ 		<prop:public-status-comment >Object created.</prop:public-status-comment>
+ 		<srel:context  xlink:type="simple" xlink:title="Context Example 1.313.563.756.003" xlink:href="/ir/context/escidoc:1001" />
+ 		<srel:content-model  xlink:type="simple" xlink:title="Generic Content Model" xlink:href="/cmm/content-model/escidoc:2001" />
+ 		<prop:lock-status >unlocked</prop:lock-status>
+ 		<prop:version  xlink:type="simple" xlink:title="This Version" xlink:href="/ir/item/escidoc:5009:1">
+			<version:number >1</version:number>
+			<version:date >2011-08-22T06:57:39.312Z</version:date>
+			<version:status >pending</version:status>  
+			<srel:modified-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />
+			<version:comment >Object created.</version:comment>
+ 		</prop:version>
+		<prop:latest-version  xlink:type="simple" xlink:title="Latest Version" xlink:href="/ir/item/escidoc:5009:1">
+			<version:number >1</version:number>
+			<version:date >2011-08-22T06:57:39.312Z</version:date>
+		</prop:latest-version>
+		<prop:content-model-specific xmlns:prop="http://escidoc.de/core/01/properties/">
+			<cms-prop test="1"></cms-prop>
+		</prop:content-model-specific>
+	</escidocItem:properties>
+	
+ 	<escidocMetadataRecords:md-records  xlink:type="simple" xlink:title="Metadata Records of Item escidoc:5009" xlink:href="/ir/item/escidoc:5009/md-records">
+ 		<escidocMetadataRecords:md-record name="escidoc" xlink:type="simple" xlink:title="escidoc" xlink:href="/ir/item/escidoc:5009/md-records/md-record/escidoc">
+ 		<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+				<dc:title>Matthias sein Test</dc:title>
+				<dc:description>A minimal item used in examples.</dc:description>
+		</metadata>
+		</escidocMetadataRecords:md-record>
+ 		
+ 		
+	</escidocMetadataRecords:md-records>
+
+ 	
+ 	<escidocComponents:components     xlink:type="simple" xlink:title="Components of Item escidoc:5009" xlink:href="/ir/item/escidoc:5009/components">
+
+ 	</escidocComponents:components>
+
+	<relations:relations xlink:type="simple" xlink:title="Relations of Item" xlink:href="/ir/item/escidoc:5009/relations"></relations:relations>
+ 	<escidocItem:resources  xlink:type="simple" xlink:title="Resources" xlink:href="/ir/item/escidoc:5009/resources" />
+</escidocItem:item>
+
+
