@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="150" lt="133" ts="1314626595506" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="133" lt="133" ts="1314626595506" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="12" lt="11" ts="1314626595644" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=BD91B67C682597B826F1F6FCCE225D92" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="65" lt="27" ts="1314626595666" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="27" lt="27" ts="1314626595666" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="25" lt="25" ts="1314626595694" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="11" lt="11" ts="1314626595720" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy01VXBOb2JUb1VoMTMxNDYyNjU5NTcwMQ==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="198" lt="197" ts="1314626596532" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-1" dt="text" by="2107"/>
+<httpSample t="178" lt="177" ts="1314626598030" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-2" dt="text" by="2101"/>
+
+<httpSample t="148" lt="132" ts="1314626635626" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="132" lt="132" ts="1314626635626" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="12" lt="12" ts="1314626635762" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=7E44788A43134A2905656EC0CE2DDE16" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="61" lt="17" ts="1314626635783" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="17" lt="17" ts="1314626635783" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="25" lt="25" ts="1314626635801" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="17" lt="17" ts="1314626635827" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1sc0pma21yOGR2MTMxNDYyNjYzNTgwOA==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="169" lt="168" ts="1314626636644" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-1" dt="text" by="2107"/>
+<httpSample t="164" lt="164" ts="1314626638148" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-2" dt="text" by="2101"/>
+
+<httpSample t="150" lt="132" ts="1314626746783" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="132" lt="132" ts="1314626746783" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="13" lt="12" ts="1314626746920" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=34C2286395B20AA5F83A1D46E94689D6" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="41" lt="16" ts="1314626746943" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="16" lt="16" ts="1314626746943" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="14" lt="14" ts="1314626746960" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="9" lt="9" ts="1314626746975" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1JSXVZYWd2RUVkMTMxNDYyNjc0Njk2OA==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="397" lt="388" ts="1314626747802" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-1" dt="text" by="2096"/>
+<httpSample t="357" lt="356" ts="1314626749299" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-2" dt="text" by="2088"/>
+
+</testResults>

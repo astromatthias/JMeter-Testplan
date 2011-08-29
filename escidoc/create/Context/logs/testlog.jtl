@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="143" lt="122" ts="1314623519740" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="122" lt="122" ts="1314623519740" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="16" lt="16" ts="1314623519867" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=82AB887075D18A2232E7322DBCA97FEB" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="66" lt="21" ts="1314623519893" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="21" lt="21" ts="1314623519893" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="25" lt="24" ts="1314623519915" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="19" lt="19" ts="1314623519940" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1meEJLTHlCSXhKMTMxNDYyMzUxOTkyMg==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="218" lt="205" ts="1314623520754" s="false" lb="PUT ITEM" rc="404" rm="Not Found" tn="Create 2-1" dt="text" by="28325"/>
+
+<httpSample t="154" lt="138" ts="1314623802871" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="138" lt="138" ts="1314623802871" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="12" lt="12" ts="1314623803013" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=69E3A2731E8AD5DBE47038098F60CA36" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="58" lt="21" ts="1314623803034" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="21" lt="21" ts="1314623803034" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="19" lt="17" ts="1314623803056" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="17" lt="17" ts="1314623803075" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1kcmhHcjZRcXNEMTMxNDYyMzgwMzA2NQ==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="536" lt="535" ts="1314623803888" s="true" lb="PUT ITEM" rc="200" rm="OK" tn="Create 2-1" dt="text" by="2107"/>
+
+<httpSample t="152" lt="134" ts="1314623842554" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="134" lt="134" ts="1314623842554" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="13" lt="13" ts="1314623842693" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=29C792514CB24AAFFFB3FBDCF0AEBF23" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="39" lt="16" ts="1314623842723" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="16" lt="16" ts="1314623842723" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="13" lt="12" ts="1314623842740" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="9" lt="9" ts="1314623842753" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1ITXl5RzN1c1VkMTMxNDYyMzg0Mjc0Ng==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="67" lt="60" ts="1314623843565" s="false" lb="PUT ITEM" rc="409" rm="Conflict" tn="Create 2-1" dt="text" by="12468"/>
+
+<httpSample t="142" lt="126" ts="1314623846621" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="126" lt="126" ts="1314623846621" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="11" lt="11" ts="1314623846752" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=9F1165362CC05D5AF944A57A4CADF407" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="50" lt="17" ts="1314623846773" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="18" lt="17" ts="1314623846773" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="13" lt="13" ts="1314623846791" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="18" lt="18" ts="1314623846805" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy16RkhwemR5N3pvMTMxNDYyMzg0Njc5OA==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="56" lt="53" ts="1314623847636" s="false" lb="PUT ITEM" rc="409" rm="Conflict" tn="Create 2-1" dt="text" by="12468"/>
+
+<httpSample t="143" lt="127" ts="1314623850279" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="127" lt="127" ts="1314623850279" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="11" lt="11" ts="1314623850411" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=1AE7862598CB0D5E58A2CEA976D7BEA4" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="46" lt="16" ts="1314623850432" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="16" lt="16" ts="1314623850432" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="12" lt="11" ts="1314623850449" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="16" lt="16" ts="1314623850462" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1WSzR2VzViOE5QMTMxNDYyMzg1MDQ1NQ==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="55" lt="49" ts="1314623851294" s="false" lb="PUT ITEM" rc="409" rm="Conflict" tn="Create 2-1" dt="text" by="12468"/>
+
+<httpSample t="145" lt="128" ts="1314625693980" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="128" lt="128" ts="1314625693980" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="12" lt="12" ts="1314625694113" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=C7DFAA2DEE826877487D94F7BF14DC18" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="54" lt="18" ts="1314625694136" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="18" lt="18" ts="1314625694136" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="25" lt="25" ts="1314625694154" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="10" lt="10" ts="1314625694180" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1CZElPc3c1blhlMTMxNDYyNTY5NDE2MA==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="301" lt="300" ts="1314625694998" s="true" lb="PUT ITEM" rc="200" rm="OK" tn="Create 2-1" dt="text" by="2101"/>
+
+</testResults>

@@ -50,7 +50,7 @@
           </elementProp>
           <elementProp name="PATH" elementType="Argument">
             <stringProp name="Argument.name">PATH</stringProp>
-            <stringProp name="Argument.value">${__P(path,/ir/item)}</stringProp>
+            <stringProp name="Argument.value">${__P(path,/oum/organizational-unit)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="AUTHUSER" elementType="Argument">
@@ -339,7 +339,7 @@ props.put(&quot;cookiedata2&quot;,vars.get(&quot;COOKIE_JSESSIONID&quot;));
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Versicherte Anwort" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1367126123">&lt;/escidocItem:item&gt;</stringProp>
+              <stringProp name="257350021">&lt;/organizational-unit:organizational-unit&gt;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>

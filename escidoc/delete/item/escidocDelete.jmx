@@ -317,7 +317,7 @@ props.put(&quot;cookiedata2&quot;,vars.get(&quot;COOKIE_JSESSIONID&quot;));
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="DELETE /ir/item" enabled="true">
+        <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="DELETE OBJECT" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Benutzer definierte Variablen" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>

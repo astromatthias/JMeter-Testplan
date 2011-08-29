@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8082/xsl/Resource2Html.xsl"?>
+<context:context  
+	xmlns:context="http://www.escidoc.de/schemas/context/0.7"  
+	xmlns:prop="http://escidoc.de/core/01/properties/" 
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"   
+	xml:base="http://localhost:8082"  
+	xlink:type="simple" 
+	xlink:title="Context Example 03 (REST)" 
+	xlink:href="/ir/context/escidoc:5028" 
+	last-modification-date="2011-08-29T13:48:15.038Z" >
+ <context:properties  
+	xlink:type="simple" 
+	xlink:title="Properties" 
+	xlink:href="/ir/context/escidoc:5028/properties">
+<prop:creation-date>2011-08-29T13:48:15.038Z</prop:creation-date>
+<srel:created-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />  
+<srel:modified-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />
+<prop:public-status>created</prop:public-status>
+<prop:public-status-comment>Object escidoc:5028 created.</prop:public-status-comment>
+<prop:name>Context Example 03 (REST)</prop:name>
+<prop:description>Geaendert um 16 Uhr 5.</prop:description>
+<prop:type>ExampleType</prop:type>
+<prop:organizational-units>
+<srel:organizational-unit  
+	xlink:type="simple" 
+	xlink:title="Example OU 01 (REST)" 
+	xlink:href="/oum/organizational-unit/escidoc:6019" />
+</prop:organizational-units>
+</context:properties>
+ <context:resources  
+	xlink:type="simple" 
+	xlink:title="Resources" 
+	xlink:href="/ir/context/escidoc:5028/resources">
+<context:members  xlink:type="simple" xlink:title="Members " 
+	xlink:href="/ir/context/escidoc:5028/resources/members" />
+<context:relations  xlink:type="simple" xlink:title="Content Relations related to this Context" xlink:href="/ir/context/escidoc:5028/resources/relations" />
+</context:resources>
+ <context:admin-descriptors  
+	xlink:type="simple" 
+	xlink:title="Admin Descriptors" 
+	xlink:href="/ir/context/escidoc:5028/admin-descriptors">
+</context:admin-descriptors>
+</context:context>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8082/xsl/Resource2Html.xsl"?>
+<organizational-unit:organizational-unit xmlns:organizational-unit="http://www.escidoc.de/schemas/organizationalunit/0.8"  xmlns:prop="http://escidoc.de/core/01/properties/" xmlns:srel="http://escidoc.de/core/01/structural-relations/" xmlns:xlink="http://www.w3.org/1999/xlink"  xmlns:escidocMetadataRecords="http://www.escidoc.de/schemas/metadatarecords/0.5"  xml:base="http://localhost:8082"  xlink:type="simple" xlink:title="Example OU 01 (REST)" xlink:href="/oum/organizational-unit/escidoc:6005" last-modification-date="2011-08-29T10:34:57.113Z" >
+<organizational-unit:properties  xlink:type="simple" xlink:title="Properties" xlink:href="/oum/organizational-unit/escidoc:6005/properties">	
+<prop:creation-date>2011-08-29T10:34:57.113Z</prop:creation-date>    
+<srel:created-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />      
+<srel:modified-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />	
+<prop:public-status>created</prop:public-status>
+	<prop:name>Example OU 01 (REST)</prop:name>
+	    <prop:external-ids></prop:external-ids>
+    <prop:has-children>false</prop:has-children>	
+</organizational-unit:properties>    
+<organizational-unit:resources  xlink:type="simple" xlink:title="Resources" xlink:href="/oum/organizational-unit/escidoc:6005/resources">
+<organizational-unit:parent-objects  xlink:type="simple" xlink:title="Parent Objects" xlink:href="/oum/organizational-unit/escidoc:6005/resources/parent-objects" /><organizational-unit:child-objects  xlink:type="simple" xlink:title="Child Objects" xlink:href="/oum/organizational-unit/escidoc:6005/resources/child-objects" /><organizational-unit:path-list  xlink:type="simple" xlink:title="Path-list" xlink:href="/oum/organizational-unit/escidoc:6005/resources/path-list" /><organizational-unit:successor-objects  xlink:type="simple" xlink:title="Successors" xlink:href="/oum/organizational-unit/escidoc:6005/resources/successors" /><organizational-unit:relations  xlink:type="simple" xlink:title="Content Relations related to this Organizational Unit" xlink:href="/oum/organizational-unit/escidoc:6005/resources/relations" /></organizational-unit:resources>   
+<escidocMetadataRecords:md-records  xlink:type="simple" xlink:title="Metadata" xlink:href="/oum/organizational-unit/escidoc:6005/md-records">
+<escidocMetadataRecords:md-record name="escidoc"
+       xlink:type="simple" xlink:title="escidoc metadata set." xlink:href="/oum/organizational-unit/escidoc:6005/md-records/md-record/escidoc">
+<ou:ou xmlns:ou="http://www.escidoc.de/metadata/organizational-unit">				
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Example OU 01 (REST)</dc:title>
+</ou:ou></escidocMetadataRecords:md-record>
+</escidocMetadataRecords:md-records>
+   	<organizational-unit:parents  xlink:type="simple" xlink:title="Parents" xlink:href="/oum/organizational-unit/escidoc:6005/parents">
+</organizational-unit:parents>   	
+</organizational-unit:organizational-unit>

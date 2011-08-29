@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="557" lt="0" ts="1314626866952" s="true" lb="DELETE OBJECT" rc="204" rm="No Content" tn="Delete 2-1" dt="" by="0"/>
+<httpSample t="0" lt="0" ts="1314626870282" s="false" lb="DELETE OBJECT" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://localhost:8082/ir/context/${pid}&apos;: escaped absolute path not valid" tn="Delete 2-2" dt="text" by="755"/>
+<httpSample t="0" lt="0" ts="1314626873615" s="false" lb="DELETE OBJECT" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://localhost:8082/ir/context/&lt;EOF&gt;&apos;: escaped absolute path not valid" tn="Delete 2-3" dt="text" by="754"/>
+
+</testResults>

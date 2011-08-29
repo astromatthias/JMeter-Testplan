@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="156" lt="139" ts="1314626865928" s="true" lb="/aa/login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211">
+  <httpSample t="139" lt="139" ts="1314626865928" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="11" lt="11" ts="1314626866073" s="true" lb="http://localhost:8082/aa/login/login.html;jsessionid=086E9F72BF4A7D768CEFEC8F24D9DECE" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2211"/>
+</httpSample>
+<httpSample t="48" lt="23" ts="1314626866098" s="true" lb="/aa/j_spring_security_check" rc="200" rm="OK" tn="Login 1-1" dt="text" by="3826">
+  <httpSample t="23" lt="23" ts="1314626866098" s="true" lb="http://localhost:8082/aa/j_spring_security_check" rc="302" rm="Moved Temporarily" tn="" dt="" by="0"/>
+  <httpSample t="14" lt="13" ts="1314626866122" s="true" lb="http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/" rc="303" rm="See Other" tn="Login 1-1" dt="" by="1103"/>
+  <httpSample t="9" lt="9" ts="1314626866137" s="true" lb="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1BWmJUNXZtdE1ZMTMxNDYyNjg2NjEyOQ==" rc="200" rm="OK" tn="Login 1-1" dt="text" by="2723"/>
+</httpSample>
+<httpSample t="557" lt="0" ts="1314626866952" s="true" lb="DELETE OBJECT" rc="204" rm="No Content" tn="Delete 2-1" dt="" by="0"/>
+<httpSample t="0" lt="0" ts="1314626870282" s="false" lb="DELETE OBJECT" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://localhost:8082/ir/context/${pid}&apos;: escaped absolute path not valid" tn="Delete 2-2" dt="text" by="755"/>
+<httpSample t="0" lt="0" ts="1314626873615" s="false" lb="DELETE OBJECT" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://localhost:8082/ir/context/&lt;EOF&gt;&apos;: escaped absolute path not valid" tn="Delete 2-3" dt="text" by="754"/>
+
+</testResults>

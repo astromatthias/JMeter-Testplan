@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="198" lt="197" ts="1314626596532" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-1" dt="text" by="2107"/>
+<httpSample t="178" lt="177" ts="1314626598030" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-2" dt="text" by="2101"/>
+
+<httpSample t="169" lt="168" ts="1314626636644" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-1" dt="text" by="2107"/>
+<httpSample t="164" lt="164" ts="1314626638148" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-2" dt="text" by="2101"/>
+
+<httpSample t="397" lt="388" ts="1314626747802" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-1" dt="text" by="2096"/>
+<httpSample t="357" lt="356" ts="1314626749299" s="true" lb="UPDATE OBJECT" rc="200" rm="OK" tn="Update 2-2" dt="text" by="2088"/>
+
+</testResults>

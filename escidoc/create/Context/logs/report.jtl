@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="218" lt="205" ts="1314623520754" s="false" lb="PUT ITEM" rc="404" rm="Not Found" tn="Create 2-1" dt="text" by="28325" ng="1" na="1"/>
+
+<httpSample t="536" lt="535" ts="1314623803888" s="true" lb="PUT ITEM" rc="200" rm="OK" tn="Create 2-1" dt="text" by="2107" ng="1" na="1"/>
+
+<httpSample t="67" lt="60" ts="1314623843565" s="false" lb="PUT ITEM" rc="409" rm="Conflict" tn="Create 2-1" dt="text" by="12468" ng="1" na="1"/>
+
+<httpSample t="56" lt="53" ts="1314623847636" s="false" lb="PUT ITEM" rc="409" rm="Conflict" tn="Create 2-1" dt="text" by="12468" ng="1" na="1"/>
+
+<httpSample t="55" lt="49" ts="1314623851294" s="false" lb="PUT ITEM" rc="409" rm="Conflict" tn="Create 2-1" dt="text" by="12468" ng="1" na="1"/>
+
+<httpSample t="301" lt="300" ts="1314625694998" s="true" lb="PUT ITEM" rc="200" rm="OK" tn="Create 2-1" dt="text" by="2101" ng="1" na="1"/>
+
+</testResults>
