@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8082/xsl/Resource2Html.xsl"?>
+<escidocContentModel:content-model
+    	xmlns:escidocContentStreams="http://www.escidoc.de/schemas/contentstreams/0.7"	     
+	xmlns:version="http://escidoc.de/core/01/properties/version/" 
+	xmlns:release="http://escidoc.de/core/01/properties/release/" 	     
+	xmlns:escidocContentModel="http://www.escidoc.de/schemas/contentmodel/0.1"  
+	xmlns:prop="http://escidoc.de/core/01/properties/" 
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"   
+	xml:base="http://localhost:8082"  
+	xlink:type="simple" 
+	xlink:title="Test minimal for create CM" 
+	xlink:href="/cmm/content-model/escidoc:7002" 
+	last-modification-date="2011-08-30T07:15:59.182Z" > 
+ 	<escidocContentModel:properties     
+		xlink:type="simple" 
+		xlink:title="Properties" 
+		xlink:href="/cmm/content-model/escidoc:7002/properties">
+		<prop:name >Test minimal for create CM</prop:name>
+		<prop:description >for update test purpose</prop:description>
+		<prop:creation-date>2011-08-30T07:15:59.182Z</prop:creation-date>
+		<srel:created-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />
+		<prop:version  xlink:type="simple" xlink:title="This Version" xlink:href="/cmm/content-model/escidoc:7002:1">
+		<version:number >1</version:number><version:date >2011-08-30T07:15:59.182Z</version:date>
+		<version:status >pending</version:status>  
+		<srel:modified-by  
+			xlink:type="simple" 
+			xlink:title="System Administrator User" 
+			xlink:href="/aa/user-account/escidoc:exuser1" />
+		<version:comment >Object created. Content Model escidoc:7002 created.</version:comment>
+		</prop:version>
+		<prop:latest-version  
+			xlink:type="simple" 
+			xlink:title="Latest Version" 
+			xlink:href="/cmm/content-model/escidoc:7002:1">
+			<version:number >1</version:number><version:date >2011-08-30T07:15:59.182Z</version:date>
+		</prop:latest-version>
+	</escidocContentModel:properties>
+
+<escidocContentModel:resources  xlink:type="simple" xlink:title="Resources" xlink:href="/cmm/content-model/escidoc:7002/resources">
+	<escidocContentModel:version-history  
+		xlink:type="simple" 
+		xlink:title="Version History" 
+		xlink:href="/cmm/content-model/escidoc:7002/resources/version-history" />
+	</escidocContentModel:resources>
+</escidocContentModel:content-model>
