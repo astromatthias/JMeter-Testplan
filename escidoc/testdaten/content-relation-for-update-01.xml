@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8082/xsl/Resource2Html.xsl"?>
+<escidocContentRelation:content-relation
+        xmlns:escidocContentRelation="http://www.escidoc.de/schemas/content-relation/0.1"	 
+	xmlns:escidocMetadataRecords="http://www.escidoc.de/schemas/metadatarecords/0.5"  
+	xmlns:prop="http://escidoc.de/core/01/properties/" 
+	xmlns:srel="http://escidoc.de/core/01/structural-relations/" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"   
+	xml:base="http://localhost:8082" 
+	xlink:type="simple" 
+	xlink:title="Content Relation" 
+	xlink:href="/ir/content-relation/escidoc:8002" 
+	last-modification-date="2011-08-30T07:53:14.608Z" >
+	
+ 	<escidocContentRelation:properties 
+	xlink:type="simple" 
+	xlink:title="Content Relation Properties" 
+	xlink:href="/ir/content-relation/escidoc:8002/properties">
+	    <prop:creation-date>2011-08-30T07:53:14.608Z</prop:creation-date>
+		<srel:created-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />
+		  <srel:modified-by  xlink:type="simple" xlink:title="System Administrator User" xlink:href="/aa/user-account/escidoc:exuser1" />
+		<prop:description >UPDATE Demo content relation between Context and Item</prop:description>
+	    <prop:public-status>pending</prop:public-status>
+	    <prop:public-status-comment >Object created.</prop:public-status-comment>
+	  <prop:lock-status >unlocked</prop:lock-status>
+ 
+	</escidocContentRelation:properties>
+	<escidocContentRelation:type >http://www.escidoc.de/ontologies/mpdl-ontologies/content-relations#hasPart</escidocContentRelation:type>	
+    	<escidocContentRelation:subject  
+		xlink:type="simple" 
+		xlink:title="Context Example 1.314.190.695.016" 
+		xlink:href="/ir/context/escidoc:1001" />	
+    	<escidocContentRelation:object  
+		xlink:type="simple" 
+		xlink:title="eSciDoc Banner" 
+		xlink:href="/ir/item/escidoc:1004:1" />	
+ 	<escidocMetadataRecords:md-records  
+		xlink:type="simple" 
+		xlink:title="Metadata Records of Content Relation escidoc:8002" 
+		xlink:href="/ir/content-relation/escidoc:8002/md-records">
+	<escidocMetadataRecords:md-record name="escidoc"
+       		xlink:type="simple" 
+		xlink:title="escidoc" 
+		xlink:href="/ir/content-relation/escidoc:8002/md-records/md-record/escidoc"><bla></bla>
+	</escidocMetadataRecords:md-record>
+
+	</escidocMetadataRecords:md-records>
+
+    	<escidocContentRelation:resources  
+		xlink:type="simple" 
+		xlink:title="Resources" 
+		xlink:href="/ir/content-relation/escidoc:8002/resources" />	
+
+</escidocContentRelation:content-relation>
+
