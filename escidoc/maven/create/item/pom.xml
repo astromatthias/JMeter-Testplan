@@ -1,0 +1,399 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.escidoc.core</groupId>
+	<artifactId>measurement</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>eSciDoc Performance Measurement</name>
+	<description>Test Core Performance</description>
+
+	<issueManagement>
+		<system>Jira</system>
+		<url>https://www.escidoc.org/jira/browse/INFR</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Hudson</system>
+		<url>http://escidev2.fiz-karlsruhe.de:8484/job/eSciDoc%20Measurement/</url>
+	</ciManagement>
+
+	<organization>
+		<name>FIZ Karlsruhe</name>
+		<url>http://www.fiz-karlsruhe.de</url>
+	</organization>
+
+	<properties>
+		<java.source.version>1.6</java.source.version>
+		<java.target.version>1.6</java.target.version>
+		<escidoc.server.host>localhost</escidoc.server.host>
+		<escidoc.server.port>8080</escidoc.server.port>
+		<escidoc.core.version>1.3.1</escidoc.core.version>
+		<escidoc.installer.config>escidoc-core-installer-config.xml</escidoc.installer.config>
+
+		<!-- for test installation -->
+		<escidoc.database.host>localhost</escidoc.database.host>
+		<escidoc.database.port>5432</escidoc.database.port>
+		<escidoc.database.user>escidoc</escidoc.database.user>
+		<escidoc.database.password>escidoc</escidoc.database.password>
+
+		<!-- Administrator Login Detail for eSciDoc -->
+		<escidoc.admin.user>sysadmin</escidoc.admin.user>
+		<escidoc.admin.password>esciDoc</escidoc.admin.password>
+
+		<escidoc.inspector.user>inspector</escidoc.inspector.user>
+		<escidoc.inspector.password>inspector</escidoc.inspector.password>
+
+		<escidoc.depositor.user>depositor</escidoc.depositor.user>
+		<escidoc.depositor.password>depositor</escidoc.depositor.password>
+
+
+		<fedora.database.user>fedoraAdmin</fedora.database.user>
+		<fedora.database.password>fedoraAdmin</fedora.database.password>
+
+	
+
+	</properties>
+
+       
+	<dependencies>
+		
+
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_core</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_components</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_functions</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_http</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_java</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_reports</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_tcp</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_ftp</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_jdbc</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_jms</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_ldap</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.jmeter</groupId>
+		    <artifactId>ApacheJMeter_mail</artifactId>
+		    <version>2.4</version>
+		</dependency>
+	 	
+    	</dependencies>
+	
+ 	
+	<build>
+		<pluginManagement>
+			<plugins>
+
+				<!-- exec-maven-plugin [default config] -->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.2</version>
+				</plugin>
+
+				<!-- maven-compiler-plugin [default config] -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.3.2</version>
+					<configuration>
+						<source>${java.source.version}</source>
+						<target>${java.target.version}</target>
+						<showDeprecation>true</showDeprecation>
+						<showWarnings>true</showWarnings>
+						<verbose>true</verbose>
+						<fork>false</fork>
+						<meminitial>128m</meminitial>
+						<maxmem>512m</maxmem>
+						<debug>false</debug>
+						<optimize>true</optimize>
+					</configuration>
+				</plugin>
+
+
+				<plugin>
+					<groupId>org.apache.jmeter</groupId>
+					<artifactId>maven-jmeter-plugin</artifactId>
+					<version>1.2</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>2.3</version>
+				</plugin>
+
+				<!-- cargo-maven2-plugin [default config] -->
+				<plugin>
+					<groupId>org.codehaus.cargo</groupId>
+					<artifactId>cargo-maven2-plugin</artifactId>
+					<version>1.1.2</version>
+				</plugin>
+
+				<!-- maven-resources-plugin [default config] -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.5</version>
+				</plugin>
+
+			</plugins>
+
+
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-filtered-test-config</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/test/filtered-resources</directory>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.escidoc.core</groupId>
+									<artifactId>installer</artifactId>
+									<version>${escidoc.core.version}</version>
+									<classifier>standard</classifier>
+									<overWrite>false</overWrite>
+									<outputDirectory>${project.build.directory}</outputDirectory>
+									<destFileName>escidoc-installer.jar</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<configuration>
+					<skip>${skipITs}</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<id>install-escidoc-core</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Dskip.validation=true</argument>
+								<argument>-jar</argument>
+								<argument>${project.build.directory}/escidoc-installer.jar</argument>
+								<argument>${project.build.directory}/${escidoc.installer.config}</argument>
+							</arguments>
+							<outputFile>${project.build.directory}/escidoc-installer.log
+							</outputFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>start-container</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>start</goal>
+						</goals>
+						<configuration>
+							<wait>false</wait>
+						</configuration>
+					</execution>
+					<execution>
+						<id>stop-container</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>stop</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<skip>${skipITs}</skip>
+					<wait>${cargo.wait}</wait>
+					<container>
+						<containerId>jboss42x</containerId>
+						<home>${project.build.directory}/escidoc/jboss</home>
+						<timeout>600000</timeout>
+						<systemProperties>
+							<ESCIDOC_HOME>${project.build.directory}/escidoc/core</ESCIDOC_HOME>
+						</systemProperties>
+					</container>
+					<configuration>
+						<type>standalone</type>
+						<properties>
+							<cargo.hostname>localhost</cargo.hostname>
+							<cargo.protocol>http</cargo.protocol>
+							<cargo.servlet.port>${escidoc.server.port}</cargo.servlet.port>
+							<cargo.rmi.port>1099</cargo.rmi.port>
+							<cargo.logging>medium</cargo.logging>
+ 							<cargo.jvmargs>-XX:PermSize=512m -XX:MaxPermSize=1024</cargo.jvmargs> 
+						</properties>
+					</configuration>
+					 
+
+
+
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.jmeter</groupId>
+				<artifactId>maven-jmeter-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>jmeter-tests</id>
+						<phase>integration-test</phase>
+						<goals>
+							<goal>jmeter</goal>
+						</goals>
+						<configuration>
+							<reportDir>${project.build.directory}/jmeter-reports</reportDir>
+							<!-- jmeterUserProperties -->								
+								<!-- die folgenden properties sind globale Maven properties in diesem File -->	
+								<!-- hostname>${escidoc.server.host}</hostname>
+								<port>${escidoc.server.port}</port -->
+
+								<!-- contains testplan.properties -->
+								<!-- host>${escidoc.server.host}</host>
+								<port>${escidoc.server.port}</port -->
+							<!-- /jmeterUserProperties -->
+							
+							<!-- jmeterDefaultPropertiesFile>
+								${project.build.directory}/jmeter.properties
+							</jmeterDefaultPropertiesFile -->
+							<jmeterHomeDirectory>
+								/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4
+							</jmeterHomeDirectory>
+							<jmeterCustomPropertiesFile>
+								${project.build.directory}/testplan.properties
+							</jmeterCustomPropertiesFile>
+							<jmeterJavaProperties>
+		   						<java.property>user.dir=/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4</java.property>
+							</jmeterJavaProperties>
+						</configuration>
+					</execution>
+				</executions>
+				
+				
+			</plugin>
+
+
+		</plugins>
+	</build>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>org.escidoc.core</id>
+			<url>https://www.escidoc.org/artifactory/repo</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<repositories>
+
+                <!-- needed for the JMETER maven plugin -->
+		<repository>
+		    <id>Java maven repo</id>
+		    <url>http://download.java.net/maven/2</url>
+		</repository>
+		<repository>
+		    <id>Maven JMeter Repo</id>
+		    <url>http://yciabaud.github.com/jmeter-maven-plugin/repository</url>
+		</repository>
+		<repository>
+            		<id>JBoss Thirdparty Releases</id>
+            		<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
+        	</repository>
+       
+		<repository>
+			<id>org.escidoc.core</id>
+			<url>https://www.escidoc.org/artifactory/repo</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+</project>

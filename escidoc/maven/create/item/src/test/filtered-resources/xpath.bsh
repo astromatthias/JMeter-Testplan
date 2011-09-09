@@ -1,0 +1,171 @@
+import bsh.Interpreter;
+import java.io.IOException;
+import java.util.Iterator;
+
+import javax.xml.namespace.NamespaceContext;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+// File to write to
+//filename = "/home/matthias/Desktop/jmeter.out"; 
+filename=props.get("resultdir");
+print(filename); 
+	
+// Get Response Data
+output = ctx.getPreviousResult() .getResponseDataAsString(); 
+InputStream bais = new ByteArrayInputStream(output.getBytes());
+
+
+// XPath output nach last-modification-date und der id und type durchsuchen. 
+
+ 		    DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
+		    domFactory.setNamespaceAware(true); 
+		    DocumentBuilder builder = domFactory.newDocumentBuilder();
+		    Document doc = builder.parse(bais);
+
+		    XPathFactory factory = XPathFactory.newInstance();
+		    XPath xpath = factory.newXPath();
+		    
+		    xpath.setNamespaceContext(new NamespaceContext() {
+		    		
+		    		    getNamespaceURI(String prefix) {
+	    	
+		    			uri=null;
+					
+					 if (prefix.equals("escidocItem"))
+					 
+						uri = "http://www.escidoc.de/schemas/item/0.10";
+					
+					 else if (prefix.equals("organizational-unit"))
+					 
+						uri = "http://www.escidoc.de/schemas/organizationalunit/0.8";
+					
+					 else if (prefix.equals("context"))
+					 
+						uri = "http://www.escidoc.de/schemas/context/0.7";
+					
+					 else if (prefix.equals("escidocContentRelation"))
+					 
+						uri = "http://www.escidoc.de/schemas/content-relation/0.1";
+					
+					 else if (prefix.equals("escidocContentModel"))
+					 
+						uri = "http://www.escidoc.de/schemas/contentmodel/0.1";
+					
+					 else if (prefix.equals("container"))
+					 
+						uri = "http://www.escidoc.de/schemas/container/0.9";
+					 
+					 else if (prefix.equals("xlink"))
+					 
+						uri = "http://www.w3.org/1999/xlink";
+					
+					 else if (prefix.equals("xml"))
+					 
+						uri = "http://www.w3.org/XML/1998/namespace";
+					 
+					 else if (prefix.equals("relations"))
+						 
+						uri = "http://www.escidoc.de/schemas/relations/0.3";
+					 
+					 else if (prefix.equals("metadatarecords") || prefix.equals("escidocMetadataRecords") || prefix.equals("md-records") || prefix.equals("metadata-records"))
+						 
+						uri = "http://www.escidoc.de/schemas/metadatarecords/0.5";
+					 
+					 else if (prefix.equals("contentstreams"))
+						 
+						uri = "http://www.escidoc.de/schemas/contentstreams/0.7";
+					 
+					 else if (prefix.equals("components"))
+						 
+						uri = "http://www.escidoc.de/schemas/components/0.9";
+					 
+					 else if (prefix.equals("properties"))
+						 
+						uri = "http://escidoc.de/core/01/properties/version/";
+					
+					 else if (prefix.equals("properties") || prefix.equals("prop") )
+						 
+						uri = "http://escidoc.de/core/01/properties/";
+					
+					 else if (prefix.equals("structural-relations") || prefix.equals("srel"))
+						 
+						uri = "http://escidoc.de/core/01/structural-relations";
+					
+					 else
+						 uri = null;
+					 
+					return uri;
+				
+				}		    
+		    		    
+		    });
+
+		    
+		    
+		    //XPathExpression moddate = xpath.compile("//"+objecttype+"/@last-modification-date"); 
+		    XPathExpression moddate = xpath.compile("//*/@last-modification-date"); 
+		
+		    XPathExpression hrefitem = xpath.compile("//*/@xlink:href"); 
+		    
+		    log.debug("Search for data....");
+		    Object result_moddate = moddate.evaluate(doc, XPathConstants.NODESET);
+		    NodeList nodes1 = (NodeList) result_moddate;
+		    lastmoddate="undefined";
+		    if (nodes1.getLength() > 0) {
+		    // for (int i = 0; i < nodes1.getLength(); i++) {
+		     	lastmoddate = nodes1.item(0).getTextContent();        
+		    // }
+		    }
+		    
+		    
+		   
+		     
+		    Object result_hrefitem = hrefitem.evaluate(doc, XPathConstants.NODESET);
+		    NodeList nodes2 = (NodeList) result_hrefitem;
+		    myobject = "undefined";
+		    if (nodes1.getLength() > 0) {
+		    // for (int j = 0; j < nodes2.getLength(); j++) {
+		     	myobject = nodes2.item(0).getTextContent();      
+		    // }
+		      }
+		    
+		     objectType="undefined"; 
+		     objectId="undefined";
+		     log.debug("XLINK HREF " + myobject);
+		     if (myobject.contains("/")) {
+		     	     myobject_array = myobject.split("/");
+		     	     objectType=myobject_array[2]; 
+		     	     objectId=myobject_array[3];
+		     } else { 
+		     	     log.debug("xlink:href in response XML is not valid");
+		     }	     
+		    
+		    log.debug("Last Mod date: " + lastmoddate); 
+		    log.debug("Object Type: " + objectType); 
+		    log.debug("Object Id: " + objectId); 
+
+// End of Xpath stuff
+
+// Start IO
+
+f = new FileOutputStream(filename,true);
+p = new PrintStream(f);
+this.interpreter.setOut(p);
+print(lastmoddate +","+objectType+","+objectId); 
+
+
+
+
+
+
