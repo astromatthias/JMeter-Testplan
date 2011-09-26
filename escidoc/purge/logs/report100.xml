@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="76" lt="75" ts="1317026251455" s="true" lb="PURGE ITEM" rc="200" rm="OK" tn="Purge 2-1" dt="text" by="363" ng="1" na="1"/>
+
+<httpSample t="88" lt="73" ts="1317027359581" s="false" lb="PURGE ITEM" rc="450" rm="" tn="Purge 2-1" dt="text" by="21774" ng="1" na="1"/>
+
+<httpSample t="38" lt="37" ts="1317027865772" s="true" lb="PURGE ITEM" rc="200" rm="OK" tn="Purge 2-1" dt="text" by="363" ng="1" na="1"/>
+
+<httpSample t="196" lt="190" ts="1317028705134" s="true" lb="PURGE ITEM" rc="200" rm="OK" tn="Purge 2-1" dt="text" by="391" ng="1" na="1"/>
+
+</testResults>

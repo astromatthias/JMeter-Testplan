@@ -1,0 +1,914 @@
+2011/09/26 11:18:23 INFO  - jmeter.util.JMeterUtils: Setting Locale to de_DE 
+2011/09/26 11:18:23 WARN  - jmeter.util.JMeterUtils: Could not find resources for 'de_DE', using 'de' 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: Loading system properties from: /home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/bin/system.properties 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: Copyright (c) 1998-2010 The Apache Software Foundation 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: Version 2.4 r961953 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: java.version=1.6.0_26 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: os.name=Linux 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: os.arch=amd64 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: os.version=2.6.32-33-generic 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: Default Locale=Deutsch (Deutschland) 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: JMeter  Locale=Deutsch (Deutschland) 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: JMeterHome=/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: user.dir  =/home/matthias/Entwicklung/Testplan/escidoc/purge 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: PWD       =/home/matthias/Entwicklung/Testplan/escidoc/purge 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: IP: 127.0.1.1 Name: matthias-desktop FullName: matthias-desktop 
+2011/09/26 11:18:23 INFO  - jmeter.services.FileServer: Default base=/home/matthias/Entwicklung/Testplan/escidoc/purge 
+2011/09/26 11:18:23 INFO  - jmeter.services.FileServer: Set new base=/home/matthias/Entwicklung/Testplan/escidoc/purge 
+2011/09/26 11:18:23 INFO  - jmeter.JMeter: Loading file: escidocPurge.jmx 
+2011/09/26 11:18:23 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2011/09/26 11:18:23 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2011/09/26 11:18:23 INFO  - jmeter.save.SaveService: Using SaveService properties file version 959116 
+2011/09/26 11:18:23 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.1 
+2011/09/26 11:18:23 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2011/09/26 11:18:23 INFO  - jmeter.protocol.http.sampler.HTTPSampler2: Local host = matthias-desktop 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.useragent = Jakarta Commons-HttpClient/3.1 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.version = HTTP/1.1 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.cookie-policy = default 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.element-charset = US-ASCII 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.content-charset = ISO-8859-1 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@74b23210 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z] 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.version = HTTP/1.1 
+2011/09/26 11:18:23 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.cookie-policy = ignoreCookies 
+2011/09/26 11:18:23 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2011/09/26 11:18:23 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2011/09/26 11:18:23 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2011/09/26 11:18:23 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2011/09/26 11:18:23 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2011/09/26 11:18:23 INFO  - jmeter.testelement.TestPlan: add 
+       to classpath 
+2011/09/26 11:18:24 INFO  - jmeter.JMeter: Test starten (1317028704082) 
+2011/09/26 11:18:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Login. 
+2011/09/26 11:18:24 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2011/09/26 11:18:24 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2011/09/26 11:18:24 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2011/09/26 11:18:24 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Login to finish before starting next group 
+2011/09/26 11:18:24 INFO  - jmeter.threads.JMeterThread: Thread started: Login 1-1 
+2011/09/26 11:18:24 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2011/09/26 11:18:24 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.GetMethod: enter GetMethod(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: Java version: 1.6.0_26 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: Java vendor: Sun Microsystems Inc. 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: Java class path: /home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/bin/ApacheJMeter.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/jorphan.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/bsf-2.4.0.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-collections-3.2.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/jdom-1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/junit-4.8.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/avalon-framework-4.1.4.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/js-1.6R5.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/activation-1.1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-jexl-1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/logkit-2.0.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/serializer-2.7.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-net-1.4.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/excalibur-datasource-1.1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-httpclient-3.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/excalibur-logger-1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-codec-1.4.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/excalibur-instrument-1.0.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-lang-2.4.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/jCharts-0.7.5.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/xalan-2.7.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/xstream-1.3.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/xpp3_min-1.1.4c.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-logging-1.1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/xml-apis-1.3.04.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/jtidy-r938.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/xmlgraphics-commons-1.3.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/commons-io-1.4.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/bsf-api-3.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/htmlparser-2.0-20060923.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/mail-1.4.3.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/oro-2.0.8.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/htmllexer-2.0-20060923.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/xercesImpl-2.9.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/bshclient.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/bsh-2.0b5.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/soap-2.3.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/geronimo-jms_1.1_spec-1.1.1.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/excalibur-pool-1.2.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_functions.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_ldap.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_tcp.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_mail.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_components.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_ftp.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_junit.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/fiz-jmeter-fedora-query.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_http.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_jdbc.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_jms.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_java.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_report.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_monitors.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/ext/ApacheJMeter_core.jar:/home/matthias/Entwicklung/Tools/jakarta-jmeter-2.4/lib/junit/test.jar 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: Operating system name: Linux 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: Operating system architecture: amd64 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: Operating system version: 2.6.32-33-generic 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SunRsaSign 1.5: Sun RSA signature provider 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SunJGSS 1.0: Sun (Kerberos v5, SPNEGO) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: SunPCSC 1.6: Sun PC/SC provider 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HttpMethod) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Attempt number 1 to process request 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.open() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: Open connection to localhost:8082 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.execute(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequest(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "GET /aa/login?target=http://localhost:8082/AdminTool/ HTTP/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Adding Host request header 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpState: enter HttpState.getCookies() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Connection: keep-alive[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Host: localhost:8082[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.writeLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.flushRequestOutputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponse(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readStatusLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.readLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 302 Moved Temporarily[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 302 Moved Temporarily[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Server: Apache-Coyote/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Set-Cookie: JSESSIONID=545146FFD3AB53CBDE587420058D7188; Path=/[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Location: http://localhost:8082/aa/login/login.html;jsessionid=545146FFD3AB53CBDE587420058D7188[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Content-Length: 0[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Date: Mon, 26 Sep 2011 09:18:24 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.canResponseHaveBody(int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Redirect required 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Should NOT close connection in response to directive: keep-alive 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.releaseConnection() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: Releasing connection back to connection manager. 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.parse(String, port, path, boolean, Header) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.validate(String, port, path, boolean, Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.GetMethod: enter GetMethod(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookieHeader(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookies(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookie(Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HttpMethod) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Attempt number 1 to process request 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.execute(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequest(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "GET /aa/login/login.html;jsessionid=545146FFD3AB53CBDE587420058D7188 HTTP/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Adding Host request header 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpState: enter HttpState.getCookies() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Connection: keep-alive[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Cookie: JSESSIONID=545146FFD3AB53CBDE587420058D7188[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Host: localhost:8082[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.writeLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.flushRequestOutputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponse(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readStatusLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.readLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 200 OK[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 200 OK[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Server: Apache-Coyote/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "ETag: W/"2211-1312961998000"[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Last-Modified: Wed, 10 Aug 2011 07:39:58 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Content-Type: text/html[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Content-Length: 2211[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Date: Mon, 26 Sep 2011 09:18:24 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.canResponseHaveBody(int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<html>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<head>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<title>eSciDoc - Login page</title>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</head>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<body bgcolor="#FFFFFF" text="#000000">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<form name="form1" method="post" action="/aa/j_spring_security_check">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "  <table width="97%" border="0">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%" height="69">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <div align="right"><img src="../../images/escidoc-logo.jpg" width="153" height="58" /></div>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%" height="69">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%" height="69"><b><font size="+3" face="Arial, Helvetica, sans-serif">Welcome [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        to eSciDoc!</font></b></td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%" height="69">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%"><font face="Arial, Helvetica, sans-serif">Please enter your [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        user-id and your password</font></td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%"> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <div align="right"><font face="Arial, Helvetica, sans-serif">User-id / Email</font></div>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%"> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <input type="text" size="30"  name="j_username">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%"> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <div align="right"><font face="Arial, Helvetica, sans-serif">Password</font></div>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%"> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <input type="password"  size="30" name="j_password">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    <tr> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="26%"> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <div align="right"></div>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="68%"> [\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "        <input type="submit" name="Abschicken" value="Submit">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      </td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "      <td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "    </tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "  </table>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</form>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</body>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</html>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Should NOT close connection in response to directive: keep-alive 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.releaseConnection() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: Releasing connection back to connection manager. 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookieHeader(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookies(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookie(Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.params.DefaultHttpParams: Set parameter http.protocol.content-charset = iso-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.addParameter(String, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.clearRequestBody() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.addParameter(String, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.clearRequestBody() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.addParameter(String, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.clearRequestBody() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.getParameters() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter getContentCharSet( Header contentheader ) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.getParameterByName(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Default charset used: iso-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.getParameters() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter getContentCharSet( Header contentheader ) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.getParameterByName(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Default charset used: iso-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter getContentCharSet( Header contentheader ) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.getParameterByName(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Default charset used: iso-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.getParameters() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter getContentCharSet( Header contentheader ) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.getParameterByName(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Default charset used: iso-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HttpMethod) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Attempt number 1 to process request 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.execute(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequest(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "POST /aa/j_spring_security_check HTTP/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.ExpectContinueMethod: enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Adding Host request header 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpState: enter HttpState.getCookies() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Connection: keep-alive[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Cookie: JSESSIONID=545146FFD3AB53CBDE587420058D7188[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Content-Type: application/x-www-form-urlencoded[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Content-Length: 56[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Host: localhost:8082[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.writeLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.hasRequestContent() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.getParameters() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter getContentCharSet( Header contentheader ) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.getParameterByName(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Default charset used: iso-8859-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.getRequestContentLength() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.hasRequestContent() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getRequestOutputStream() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: >> "j_username=sysadmin&j_password=esciDoc&Abschicken=Submit" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: Request body sent 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.flushRequestOutputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponse(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readStatusLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.readLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 302 Moved Temporarily[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 302 Moved Temporarily[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Server: Apache-Coyote/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Set-Cookie: JSESSIONID=50DF992C9830AD22B0A5EB7D73DB8489; Path=/[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Location: http://localhost:8082/aa/login?target=http://localhost:8082/AdminTool/[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Content-Length: 0[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Date: Mon, 26 Sep 2011 09:18:24 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.canResponseHaveBody(int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Redirect required 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Should NOT close connection in response to directive: keep-alive 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.releaseConnection() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: Releasing connection back to connection manager. 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.parse(String, port, path, boolean, Header) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.validate(String, port, path, boolean, Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.GetMethod: enter GetMethod(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookieHeader(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookies(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookie(Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HttpMethod) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Attempt number 1 to process request 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.execute(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequest(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "GET /aa/login?target=http://localhost:8082/AdminTool/ HTTP/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Adding Host request header 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpState: enter HttpState.getCookies() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Connection: keep-alive[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Cookie: JSESSIONID=50DF992C9830AD22B0A5EB7D73DB8489[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Host: localhost:8082[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.writeLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.flushRequestOutputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponse(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readStatusLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.readLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 303 See Other[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 303 See Other[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Server: Apache-Coyote/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Set-Cookie: escidocCookie=ESCIDOC-n4VAPfSgq31317028704395; Path=/[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Location: http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1uNFZBUGZTZ3EzMTMxNzAyODcwNDM5NQ==[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Transfer-Encoding: chunked[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Date: Mon, 26 Sep 2011 09:18:24 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.canResponseHaveBody(int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable(int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Redirect required 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "4" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "4" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "f" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<html>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<head>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<title>eSciDoc - Login successful</title>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<meta http-equiv="refresh" content="5; URL=http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1uNFZBUGZTZ3EzMTMxNzAyODcwNDM5NQ==" />[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</head>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<body bgcolor="#FFFFFF" text="#000000">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<table width="97%" border="0">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9]<tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="26%" height="69">[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<div align="right"><img src="../../images/escidoc-logo.jpg" width="153" height="58" /></div>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="3%" height="69">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="68%" height="69"><b><font size="+3"[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9][0x9]face="Arial, Helvetica, sans-serif">Login successful</font></b></td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="3%" height="69">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9]</tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9]<tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="26%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="68%"><br />[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<p><a href="http://localhost:8082/AdminTool/?eSciDocUserHandle=RVNDSURPQy1uNFZBUGZTZ3EzMTMxNzAyODcwNDM5NQ==">If you are not automatically redirected,[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]use this link to return to the eSciDoc service.</a></p>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9][0x9]<td width="3%">&nbsp;</td>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[0x9]</tr>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</table>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</body>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</html>[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "0" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Should NOT close connection in response to directive: keep-alive 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.releaseConnection() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: Releasing connection back to connection manager. 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.parse(String, port, path, boolean, Header) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.validate(String, port, path, boolean, Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.methods.GetMethod: enter GetMethod(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie.compare(Object, Object) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookieHeader(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookies(Cookie[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookie(Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.formatCookie(Cookie) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HttpMethod) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Attempt number 1 to process request 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.execute(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequest(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "GET /AdminTool/?eSciDocUserHandle=RVNDSURPQy1uNFZBUGZTZ3EzMTMxNzAyODcwNDM5NQ== HTTP/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Adding Host request header 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpState: enter HttpState.getCookies() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Connection: keep-alive[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Cookie: JSESSIONID=50DF992C9830AD22B0A5EB7D73DB8489; escidocCookie=ESCIDOC-n4VAPfSgq31317028704395[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "Host: localhost:8082[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.writeLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: >> "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.flushRequestOutputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponse(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readStatusLine(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.readLine() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 200 OK[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "HTTP/1.1 200 OK[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Server: Apache-Coyote/1.1[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Set-Cookie: JSESSIONID=31ADE4DEC2FB6C371B33E381B8FBDF03; Path=/AdminTool[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Cache-Control: no-cache[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Pragma: no-cache[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Content-Type: text/html;charset=UTF-8[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Content-Length: 2723[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "Date: Mon, 26 Sep 2011 09:18:24 GMT[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpState, HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpConnection) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.canResponseHaveBody(int) 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<html xmlns="http://www.w3.org/1999/xhtml">[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<head>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<style type="text/css">html, body {height:100%;margin:0;}</style><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/AdminTool/VAADIN/themes/escidoc/favicon.ico" /><link rel="icon" type="image/vnd.microsoft.icon" href="/AdminTool/VAADIN/themes/escidoc/favicon.ico" /><title>eSciDoc&#32;Admin&#32;Tool</title>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</head>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<body scroll="auto" class="v-generated-body">[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<script type="text/javascript">[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "//<![CDATA[[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "if(!vaadin || !vaadin.vaadinConfigurations) {[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << " if(!vaadin) { var vaadin = {}} [\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "vaadin.vaadinConfigurations = {};[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "if (!vaadin.themesLoaded) { vaadin.themesLoaded = {}; }[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "document.write('<iframe tabIndex="-1" id="__gwt_historyFrame" style="position:absolute;width:0;height:0;border:0;overflow:hidden;" src="javascript:false"></iframe>');[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "document.write("<script language='javascript' src='/AdminTool/VAADIN/widgetsets/com.vaadin.terminal.gwt.DefaultWidgetSet/com.vaadin.terminal.gwt.DefaultWidgetSet.nocache.js?1317028704456'><\/script>");[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "}[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "vaadin.vaadinConfigurations["AdminTool-2025832807"] = {appUri:'/AdminTool', standalone: true, themeUri:"/AdminTool/VAADIN/themes/escidoc", versionInfo : {vaadinVersion:"6.6.2",applicationVersion:"NONVERSIONED"},"comErrMsg": {"caption":"Communication problem","message" : "Take note of any unsaved data, and <u>click here<\/u> to continue.","url" : null},"authErrMsg": {"caption":"Authentication problem","message" : "Take note of any unsaved data, and <u>click here<\/u> to continue.","url" : null}};[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "//]]>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</script>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<script type="text/javascript">[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "//<![CDATA[[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "if(!vaadin.themesLoaded['escidoc']) {[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "var stylesheet = document.createElement('link');[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "stylesheet.setAttribute('rel', 'stylesheet');[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "stylesheet.setAttribute('type', 'text/css');[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "stylesheet.setAttribute('href', '/AdminTool/VAADIN/themes/escidoc/styles.css');[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "document.getElementsByTagName('head')[0].appendChild(stylesheet);[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "vaadin.themesLoaded['escidoc'] = true;[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "}[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "//]]>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</script>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<script type="text/javascript">[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "//<![CDATA[[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "setTimeout('if (typeof com_vaadin_terminal_gwt_DefaultWidgetSet == "undefined") {alert("Failed to load the widgetset: /AdminTool/VAADIN/widgetsets/com.vaadin.terminal.gwt.DefaultWidgetSet/com.vaadin.terminal.gwt.DefaultWidgetSet.nocache.js?1317028704456")};',15000);[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "//]]>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</script>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<div id="AdminTool-2025832807" class="v-app v-theme-escidoc v-app-AdminToolApplication" ><div class="v-app-loading"></div></div>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "<noscript>You have to enable javascript in your browser to use an application built with Vaadin.</noscript></body>[\n]" 
+2011/09/26 11:18:24 DEBUG - httpclient.wire.content: << "</html>[\n]" 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Should NOT close connection in response to directive: keep-alive 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.releaseConnection() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: Releasing connection back to connection manager. 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.parse(String, port, path, boolean, Header) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.Cookie: enter Cookie(String, String, String, String, Date, boolean) 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.validate(String, port, path, boolean, Cookie) 
+2011/09/26 11:18:24 INFO  - jmeter.threads.JMeterThread: Thread finished: Login 1-1 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.close() 
+2011/09/26 11:18:24 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.closeSockedAndStreams() 
+2011/09/26 11:18:24 INFO  - jmeter.engine.StandardJMeterEngine: Ending thread Login 1-1 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Purge. 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: All threads have been started 
+2011/09/26 11:18:25 INFO  - jmeter.threads.JMeterThread: Thread started: Purge 2-1 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: HttpMethodBase.addRequestHeader(Header) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: HttpMethodBase.addRequestHeader(Header) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.cookie.CookieSpec: enter CookieSpecBase.match(String, int, String, boolean, Cookie[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.clearRequestBody() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.clearRequestBody() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.renerateRequestBody() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HttpMethod) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpClient: enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodDirector: Attempt number 1 to process request 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.open() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: Open connection to localhost:8082 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.execute(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequest(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "POST /adm/admin/deleteobjects HTTP/1.1[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.ExpectContinueMethod: enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Adding Host request header 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpState: enter HttpState.getCookies() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "Connection: keep-alive[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "Cookie: escidocCookie=ESCIDOC-n4VAPfSgq31317028704395; [\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "Cookie: JSESSIONID=31ADE4DEC2FB6C371B33E381B8FBDF03; [\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "Content-Type: text/xml[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "Content-Length: 95[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "Host: localhost:8082[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.print(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.writeLine() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.write(byte[], int, int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: >> "[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.hasRequestContent() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.hasRequestContent() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.getRequestContentLength() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.PostMethod: enter PostMethod.hasRequestContent() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: enter EntityEnclosingMethod.hasRequestContent() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getRequestOutputStream() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: >> "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: >> "<param>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: >> "<id>escidoc:8008</id>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: >> "</param>[\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.methods.EntityEnclosingMethod: Request body sent 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.flushRequestOutputStream() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponse(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readStatusLine(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.readLine() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "HTTP/1.1 200 OK[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "HTTP/1.1 200 OK[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "Server: Apache-Coyote/1.1[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "Cache-Control: no-cache[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "Pragma: no-cache[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "Content-Type: text/xml;charset=UTF-8[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "Transfer-Encoding: chunked[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "Date: Mon, 26 Sep 2011 09:18:24 GMT[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpState, HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.readResponseBody(HttpConnection) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.getResponseInputStream() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: enter HttpMethodBase.canResponseHaveBody(int) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HeaderElement: enter HeaderElement.parseElements(char[]) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable(int) 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "1" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "8" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "7" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "<?xml version="1.0" encoding="UTF-8"?>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "<?xml-stylesheet type="text/xsl" href="http://localhost:8082/xsl/Resource2Html.xsl"?>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "<result xmlns="http://www.escidoc.de/schemas/result/0.1" last-modification-date="2011-09-26T09:18:25.267Z">[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "<message>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "scheduling 1 objects(s) for deletion from Fedora[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "</message>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "<message>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "scheduling 1 object(s) for deletion from search index[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "</message>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "</result>[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "0" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HeaderParser.parseHeaders(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readLine(InputStream, String) 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpParser: enter HttpParser.readRawLine() 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\r]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.content: << "[\n]" 
+2011/09/26 11:18:25 DEBUG - httpclient.wire.header: << "[\r][\n]" 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpMethodBase: Should NOT close connection in response to directive: keep-alive 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.isResponseAvailable() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.releaseConnection() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: Releasing connection back to connection manager. 
+2011/09/26 11:18:25 INFO  - jmeter.threads.JMeterThread: Thread finished: Purge 2-1 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.close() 
+2011/09/26 11:18:25 DEBUG - org.apache.commons.httpclient.HttpConnection: enter HttpConnection.closeSockedAndStreams() 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: Ending thread Purge 2-1 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: Stopping test 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2011/09/26 11:18:25 INFO  - jmeter.engine.StandardJMeterEngine: Test has ended 
